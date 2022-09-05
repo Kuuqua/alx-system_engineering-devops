@@ -50,4 +50,4 @@ Q24. find . -name \*.gif -type f -printf "%f\n" | LC_COLLATE=C sort --ignore-cas
 
 Q25. cut -c 1 | tr -d '\n' | sort  = decodes acrostics that use the first letter of each line
 
-Q26. cut -f1 -d$'\t' | sort | uniq -c | tr -s ' ' | sort -t' ' -k1 -nr | head -11 | cut -d' ' -f3  = parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+Q26.tail -n +2 | cut -f1 | sort | uniq -c |sort -nr | head -11 | tr -s ' ' | cut -d' ' -f3   = parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
