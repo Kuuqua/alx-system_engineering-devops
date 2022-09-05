@@ -46,7 +46,7 @@ Q22. cut -d':' -f1,6 /etc/passwd | sort  = displays all users and their home dir
 
 Q23. find . -empty -printf "%f\n"  = finds all empty files and directories in the current directory and all sub-directories.
 
-Q24. find . -name \*.gif -type f -printf "%f\n" | LC_COLLATE=C sort --ignore-case | rev | cut -c 5- | rev  = lists all the files with a .gif extension in the current directory and all its sub-directories.
+Q24. find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f  = lists all the files with a .gif extension in the current directory and all its sub-directories.
 
 Q25. cut -c 1 | tr -d '\n' | sort  = decodes acrostics that use the first letter of each line
 
