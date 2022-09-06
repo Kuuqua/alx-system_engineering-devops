@@ -34,4 +34,4 @@ Q15. tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr 
 
 Q16. perl -lne 'print if $. % 2 == 1'  = prints every other line from the input, starting with the first line.
 
-Q17. echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'behlnort')  =  adds the two numbers stored in the environment variables WATER and STIR and prints the result.
+Q17. echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')  =  adds the two numbers stored in the environment variables WATER and STIR and prints the result.
