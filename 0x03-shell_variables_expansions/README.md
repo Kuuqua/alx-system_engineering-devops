@@ -31,3 +31,5 @@ Q13. printf "%.2f" $NUM | sort  =  prints a number with two decimal places, foll
 Q14. printf '%x\n' $DECIMAL  = converts a number from base 10 to base 16.
 
 Q15. tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`  =  encodes and decodes text using the rot13 encryption. Assume ASCII
+
+Q16. perl -lne 'print if $. % 2 == 1'  = prints every other line from the input, starting with the first line.
