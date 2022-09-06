@@ -22,4 +22,8 @@ Q9. echo $(($POWER / $DIVIDE))  = prints the result of POWER divided by DIVIDE, 
 
 Q10. $(($BREATH**$LOVE))  = displays the result of BREATH to the power LOVE
 
-Q11. echo $((2#$BINARY))  = converts a number from base 2 to base 10. 
+Q11. echo $((2#$BINARY))  = converts a number from base 2 to base 10.
+
+Q12. echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"  =  prints all possible combinations of two letters, except oo
+
+
