@@ -14,4 +14,6 @@ Q5. set  =  Create a script that lists all local variables and environment varia
 
 Q6. BEST="School"  = Create a script that creates a new local variable.
 
+Q7. export BEST="School"
 
+Q8.
