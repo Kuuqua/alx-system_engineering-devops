@@ -20,4 +20,4 @@ Q8. echo $(($TRUEKNOWLEDGE + 128))  =  prints the result of the addition of 128 
 
 Q9. echo $(($POWER / $DIVIDE))  = prints the result of POWER divided by DIVIDE, followed by a new line
 
-Q10. 
+Q10. $(($BREATH**$LOVE))  = displays the result of BREATH to the power LOVE 
