@@ -14,6 +14,8 @@ Q5. set  =  Create a script that lists all local variables and environment varia
 
 Q6. BEST="School"  = Create a script that creates a new local variable.
 
-Q7. export BEST="School"
+Q7. export BEST="School" = Create a script that creates a new global variable.
 
-Q8.
+Q8. echo $(($TRUEKNOWLEDGE + 128))  =  prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
+
+Q9.
