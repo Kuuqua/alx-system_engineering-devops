@@ -9,3 +9,7 @@ Q3. export PATH=$PATH:/action  =  Add /action to the PATH. /action should be the
 Q4. echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))  = Create a script that counts the number of directories in the PATH.
 
 Q5. printenv  = Create a script that lists environment variables.
+
+Q6. set  =  Create a script that lists all local variables and environment variables, and functions.
+
+
