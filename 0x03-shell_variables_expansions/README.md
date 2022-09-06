@@ -26,4 +26,4 @@ Q11. echo $((2#$BINARY))  = converts a number from base 2 to base 10.
 
 Q12. echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"  =  prints all possible combinations of two letters, except oo
 
-
+Q13. printf "%.2f" $NUM | sort  =  prints a number with two decimal places, followed by a new line.
