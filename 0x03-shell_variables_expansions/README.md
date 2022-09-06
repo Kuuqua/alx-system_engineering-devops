@@ -29,3 +29,5 @@ Q12. echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"  =  prints all possible comb
 Q13. printf "%.2f" $NUM | sort  =  prints a number with two decimal places, followed by a new line.
 
 Q14. printf '%x\n' $DECIMAL  = converts a number from base 10 to base 16.
+
+Q15. tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`  =  encodes and decodes text using the rot13 encryption. Assume ASCII
