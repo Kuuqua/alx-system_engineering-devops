@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-#Creating a script that uses if, else if and else statements
-x=1
-while [ $x -le 10 ]
+# prints Best School 10 times. add a Hi after the 9th print
+
+countup=0
+while [ $countup -lt 10 ]
 do
-	if [ $x -eq 4 ]
+	if [[ $countup -eq 3 ]]
 	then
-	    echo "bad luck"
-	elif [ $x -eq 8 ]
+		echo bad luck
+	elif [[ $countup -eq 7 ]]
 	then
-	    echo "good luck"
-       	else
-	    echo "Holberton School"
+		echo good luck
+	else
+		echo Best School
 	fi
-	((x++))
+	countup=$((countup + 1))
 done
