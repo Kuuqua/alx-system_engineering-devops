@@ -9,7 +9,7 @@ echo "Ceci n'est pas une page" \
   | sudo tee /usr/share/nginx/html/404.html
 sudo sed -i "s/server_name _;/server_name _;\n\
 \trewrite ^\
-\/redirect_me https:\/\/github.com\/waley-code permanent;\n\
+\/redirect_me https:\/\/github.com\/kuuqua permanent;\n\
 \n\
 \terror_page 404 \/404.html;\n\
 \tlocation = \/404.html {\n\
